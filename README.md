@@ -1,2 +1,1 @@
-# Major Projects
- List of Major Projects
+I wholeheartedly believe in the proverb, "Don't find customers for your product; find products for your customers." I've spent my career in an industry where the client always comes first, so I know what users seek when they visit a website. As a result, I've created end-to-end real-world projects to showcase my interests and strongholds
