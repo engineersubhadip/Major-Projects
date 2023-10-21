@@ -20,9 +20,7 @@ box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0,
             max-height: 351px;
 }
 
-/* .card-body .price-bottombutton {
-            margin-top:10px;
-} */
+
 
 /* ! Over-rode .card-body display type */
 
@@ -32,3 +30,36 @@ box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0,
             justify-content: space-between;
             /* align-items:start; */
 }
+
+/* ! Applying Media Query for Mobile View */
+
+@media (max-width:600px){
+            /* .container-cards {
+                        border:2px solid pink;
+                        display: flex;
+                        hwight
+                        flex-direction: column;
+                        justify-content: space-between;
+            } */
+            /* .row {
+                        gap:10px;
+            } */
+            .col-md-6{
+                        display: flex;
+                        /* border:2px solid black; */
+                        justify-content: center;
+                        margin-top:20px;
+                        margin-bottom: 20px;;
+            }
+
+            .card {
+                        /* max-height: 500px; */
+                        /* margin-bottom: 20px; */
+            }
+            
+            .custom-divider {
+                        display: none;
+            }
+}
+
+
