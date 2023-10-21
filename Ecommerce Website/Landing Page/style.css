@@ -39,6 +39,35 @@ box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0,
             /* align-items:start; */
 }
 
+/* ! Media query for Large Screens (992-1199.99) */
+
+@media (min-width: 992px) {
+            /* .container {
+                        display: flex;
+                        justify-content: space-between;
+            } */
+            
+            .row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+            }
+
+            /* .custom-card {
+                        display: flex;
+                        justify-content: center;
+            } */
+
+            .custom-target {
+                        /* border:2px solid green; */
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        /* gap:4rem; */
+                        /* justify-content: flex-end; */
+            }
+}
+
 /* ! Applying Media Query for Mobile View */
 
 @media (max-width:575px){
