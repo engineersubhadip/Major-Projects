@@ -45,6 +45,13 @@ body .bg-body-tertiary {
             font-size: larger;
 }
 
+/* ! Changing selling Points :- */
+
+.selling-points {
+            display: inline;
+            white-space: nowrap;
+}
+
 /* ! Making Change to "Our Best Sellers" Section */
 
 .heading {
@@ -53,8 +60,8 @@ body .bg-body-tertiary {
             font-style:normal;
             padding-left: 3px;;
             padding-right: 3px;
-            margin-left:131.667px;
-            margin-right:131.667px;
+            margin-left:40px;
+            margin-right:40px;
             margin-bottom: 48px;
             margin-top: 3rem;
             display: flex;
