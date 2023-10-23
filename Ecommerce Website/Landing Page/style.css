@@ -81,19 +81,19 @@ body .bg-body-tertiary {
             padding-bottom: 3.3px;
 }
 
-.custom-target .shop-by-category-custom-card img {
+/* .custom-target .shop-by-category-custom-card img {
             max-width:213px;
             max-height:304.760px;
-}
+} */
 
 .custom-card {
             padding-bottom: 3.3px;
 }
 
-.product-image {
+/* .product-image {
             max-width: 231px;
             max-height: 370px;
-}
+} */
 
 
 
@@ -132,6 +132,16 @@ body .bg-body-tertiary {
                         height:100%;
             }
 
+		.shop-by-category-custom-card {
+			width:100%;
+			height:auto;
+		}
+
+		.shop-by-category-custom-card img{
+			width:100%;
+			height:auto;
+		}
+
             /* .shop-by-category-custom-card {
                         display: flex;
             } */
@@ -149,6 +159,16 @@ body .bg-body-tertiary {
                         display: flex;
                         justify-content: center;
             }
+
+		.custom-card {
+			width: 100%;
+			height:auto;
+		}
+
+		.custom-card img{
+			width:100%;
+			height:auto;
+		}
 }
 
 /* ! Media query for Medium (576-991) */
@@ -186,6 +206,16 @@ body .bg-body-tertiary {
                         display: flex;
             }
 
+		.shop-by-category-custom-card {
+			width:100%;
+			height:auto;
+		}
+
+		.shop-by-category-custom-card img{
+			width:100%;
+			height:auto;
+		}
+
 
             /*! Targeting Cards of Festive picks */
 
@@ -199,6 +229,16 @@ body .bg-body-tertiary {
             .custom-divider {
                         display: none;
             }
+
+		.custom-card {
+			width: 100%;
+			height:auto;
+		}
+
+		.custom-card img{
+			width:100%;
+			height:auto;
+		}
 }
 
 @media (max-width: 575.98px) {
@@ -221,6 +261,16 @@ body .bg-body-tertiary {
                         margin-bottom: 0;
             }
 
+		.shop-by-category-custom-card {
+			width:100%;
+			height:auto;
+		}
+
+		.shop-by-category-custom-card img{
+			width:100%;
+			height:auto;
+		}
+
             /* ! For our Festive Picks */
 
             .festive-picks-custom-target {
@@ -235,6 +285,16 @@ body .bg-body-tertiary {
             .festive-picks-custom-target:nth-child(4) {
                         margin-bottom: 0;
             }
+
+		.custom-card {
+			width: 100%;
+			height:auto;
+		}
+
+		.custom-card img{
+			width:100%;
+			height:auto;
+		}
             
 }
 
