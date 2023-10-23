@@ -40,7 +40,7 @@ body .bg-body-tertiary {
 /* ! Changing the Navbar Header Text */
 
 .navbar-brand {
-            font-family: cursive;
+            font-family: sans-serif;
             font-weight: bold;
             font-size: larger;
 }
