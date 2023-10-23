@@ -1,0 +1,56 @@
+html {
+       box-sizing: border-box;     
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.first-image, .second-image, .third-image {
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.first-image {
+	background-image: url(./Images/image1.jpg);
+	min-height:500px;
+	opacity:0.8
+}
+
+.second-image {
+	background-image: url(./Images/image2.jpeg);
+	min-height:400px;
+}
+
+.third-image {
+	background-image: url(./Images/image3.jpg);
+	min-height:300px;
+}
+
+section {
+	text-align: center;
+	padding: 3rem 5rem;;
+}
+
+.first-image-content {
+	background-color: #f4f4f4;
+	color: #0f0f0f;
+}
+
+.second-image-content, .third-image-content {
+	background-color: #282e34;
+	color:whitesmoke;
+}
+
+span {
+	color:white;
+	text-align: center;
+	margin: 10rem 8rem;;
+}
