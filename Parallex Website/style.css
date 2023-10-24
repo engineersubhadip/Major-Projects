@@ -20,13 +20,13 @@ body {
 
 .first-image {
 	background-image: url(./Images/image1.jpg);
-	min-height:500px;
+	min-height:650px;
 	opacity:0.8
 }
 
 .second-image {
 	background-image: url(./Images/image2.jpeg);
-	min-height:400px;
+	min-height:500px;
 }
 
 .third-image {
