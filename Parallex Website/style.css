@@ -12,6 +12,21 @@ body {
 }
 
 
+
+/* span {
+	position: relative;
+	top: 325px;
+	left: 425px;
+} */
+
+/* button {
+	position: relative;
+	top: 355px;
+	left:205px;
+} */
+
+
+
 .first-image, .second-image, .third-image {
 	background-position:center;
 	background-size: cover;
@@ -26,12 +41,12 @@ body {
 
 .second-image {
 	background-image: url(./Images/image2.jpeg);
-	min-height:500px;
+	min-height:640px;
 }
 
 .third-image {
 	background-image: url(./Images/image3.jpg);
-	min-height:300px;
+	min-height:640px;
 }
 
 section {
@@ -49,8 +64,36 @@ section {
 	color:whitesmoke;
 }
 
-span {
+/* span {
 	color:white;
 	text-align: center;
 	margin: 10rem 8rem;;
+} */
+
+/* .image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+.image {
+	display: flex;
+	position: relative;
+}
+
+.image div {
+	position: absolute;
+	top:50%;
+	width:100%;
+	text-align: center;
+	color:white;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.first-image div span{
+	color : whitesmoke;
+	background-color: #111;
+	padding:20px;
 }
