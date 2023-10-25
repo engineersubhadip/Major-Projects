@@ -1,5 +1,9 @@
 :root {
-	--navbar-color:#F2E8DF;
+	--pale-yellow:#F2E8DF;
+	--pale-blue:#2c3e50;
+	--mid-gray:#999;
+	--pale-green:#4F4E35;
+	--hookish-green:#FFFBD5;
 }
 
 
@@ -17,7 +21,7 @@ body {
 }
 
 #header {
-	background-color: var(--navbar-color);
+	background-color: var(--pale-yellow);
 	padding: 1.25rem;
 }
 
