@@ -1,5 +1,5 @@
 #price-filter-label-min {
-            flex-basis: 56%;
+            flex-basis: 65%;
 }
 
 .clear-filter {
@@ -16,7 +16,7 @@
 }
 
 .product-list-sidebar{
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	margin-right: 100px;
 	flex-basis: 25%;
 }
@@ -34,7 +34,11 @@
 }
 
 #categoryList {
-	margin-bottom: 1rem;;
+	margin-bottom: 1rem;
+}
+
+#categoryList a {
+	padding-left: 12px;
 }
 
 .product-list-sidebar a:hover{
@@ -60,7 +64,7 @@
 
 
 .product-list-box{
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	flex-basis:75%;
 	text-align: center;
 }

@@ -23,9 +23,6 @@
 .category-item a{
 	color: var(--hookish-green);
 	text-decoration: none;
-
-	/* margin: 16px 0px 0px;
-	padding:0 35px; */
 	font-size: 13px;
 	letter-spacing: 2px;
 }
