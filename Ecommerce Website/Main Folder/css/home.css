@@ -41,9 +41,59 @@
 .festive-edit-header {
 	margin-top:3rem;
 	flex:100%;
+	padding:0;
 	/* width:30% */
 }
 
 .festive-edit-header img {
 	width:100%;
 }
+
+.festive-edit-wrapper {
+	background-color: rgb(245, 229, 229);
+	padding:48px 0;
+}
+
+.festive-edit-wrapper .festive-edit {
+	padding-bottom: 48px;
+}
+
+#festiveEditCollections {
+	text-align: center;
+}
+
+.festive-edit-collections .festive-edit-collections-name {
+	width:23.2%;
+	/* height:100%; */
+	background-color: white;
+	box-shadow:0px 1px 5px var(--light-gray);
+	margin-bottom: 30px;
+	margin-right:2%;
+}
+
+.festive-edit-collections .festive-edit-collections-name:nth-child(4n){
+	margin-right: 0;
+}
+
+.festive-edit-collections .festive-edit-collections-name img {
+	width:100%;
+	/* height: calc((100% -100px)/3); */
+}
+
+.festive-edit-collections .festive-edit-collections-name .festive-edit-collections-item-name{
+	font-size: 1rem;
+	color:black;
+	padding: 0.75rem 0;
+}
+
+.festive-edit-collections .festive-edit-collections-name .festive-edit-collections-item-price{
+	padding-bottom: 10px;
+}
+
+.festive-edit-collections .festive-edit-collections-name:hover {
+	box-shadow: 0px 4px 10px var(--light-gray);
+	transition: box-shadow 0.15s linear 0s;
+}
+ 
+
+
