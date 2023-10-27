@@ -1,0 +1,260 @@
+.home-title {
+	font-size: 3rem;
+	letter-spacing: 1rem;
+	margin-top: 5rem;
+}
+
+.category-list {
+	margin-top:3rem;
+}
+
+.category-item {
+	border: 1px solid var(--pale-blue);
+	box-shadow: 2px 2px 2px var(--mid-gray);
+	margin:1.5rem;
+	width:150px;
+	background-color: var(--pale-green);
+	text-align: center;
+	width:170px;
+	height:52px;
+	border-radius: 5.3px;
+}
+
+.category-item a{
+	color: var(--hookish-green);
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+.category-item:hover {
+	box-shadow: 0px 0px;
+	transition: box-shadow 0.15s linear 0s;
+}
+
+
+.category-title {
+	margin-top: 3rem;
+	font-size: 1.5rem;
+}
+
+.festive-edit-header {
+	margin-top:3rem;
+	flex:100%;
+	padding:0;
+	/* width:30% */
+}
+
+.festive-edit-header img {
+	width:100%;
+}
+
+.festive-edit-wrapper {
+	background-color: rgb(245, 229, 229);
+	padding:48px 0;
+}
+
+.festive-edit-wrapper .festive-edit {
+	padding-bottom: 48px;
+}
+
+#festiveEditCollections {
+	text-align: center;
+}
+
+.festive-edit-collections .festive-edit-collections-name {
+	width:23.2%;
+	/* height:100%; */
+	background-color: white;
+	box-shadow:0px 1px 5px var(--light-gray);
+	margin-bottom: 30px;
+	margin-right:2%;
+}
+
+.festive-edit-collections .festive-edit-collections-name:nth-child(4n){
+	margin-right: 0;
+}
+
+.festive-edit-collections .festive-edit-collections-name img {
+	width:100%;
+	/* height: calc((100% -100px)/3); */
+}
+
+.festive-edit-collections .festive-edit-collections-name .festive-edit-collections-item-name{
+	font-size: 1rem;
+	color:black;
+	padding: 0.75rem 0;
+}
+
+.festive-edit-collections .festive-edit-collections-name .festive-edit-collections-item-price{
+	padding-bottom: 10px;
+}
+
+.festive-edit-collections .festive-edit-collections-name:hover {
+	box-shadow: 0px 4px 10px var(--light-gray);
+	transition: box-shadow 0.15s linear 0s;
+}
+
+.shop-by-collection-wrapper {
+	gap: 4%;
+}
+
+.shop-by-collection-left-panel {
+	flex-basis: 48%;
+}
+
+.shop-by-collection-everyday-wear {
+	width: 100%;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.shop-by-collection-everyday-wear .video video {
+	width:100%;
+}
+
+.shop-by-collection-everyday-wear .details {
+	position: absolute;
+	top:50%;
+	width:100%;
+	text-align: center;
+	color: var(--hookish-green);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.shop-by-collection-everyday-wear .details p:nth-child(2) {
+	font-size: 2rem;
+	line-height: 1px;
+}
+
+.shop-by-collections-moonsoon-light {
+	width: 100%;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.shop-by-collections-moonsoon-light .image img {
+	width:100%;
+}
+
+.shop-by-collections-moonsoon-light .details {
+	position: absolute;
+	top:50%;
+	width:100%;
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.shop-by-collections-moonsoon-light .details p:nth-child(2) {
+	font-size: 2rem;
+}
+
+.shop-by-collections-kids-wear {
+	width: 100%;
+	position: relative;
+}
+
+.shop-by-collections-kids-wear .image img {
+	width:100%;
+}
+
+.shop-by-collections-kids-wear .details {
+	position: absolute;
+	top:50%;
+	width:100%;
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.shop-by-collections-kids-wear .details p:nth-child(2) {
+	font-size: 2rem;
+}
+
+/* ! From here we need to give flex to the right panel */
+
+
+.shop-by-collection-right-panel {
+	flex-basis: 56%;
+}
+
+
+.shop-by-collections-gorod {
+	width:100%;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.shop-by-collections-gorod .image img {
+	width: 100%;
+}
+
+.shop-by-collections-gorod .details {
+	position: absolute;
+	top: 31.5%;
+	width:100%;
+	text-align:center;
+	color: var(--hookish-green);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.shop-by-collections-gorod .details p:nth-child(2) {
+	font-size: 2rem;
+	line-height: 1px;
+}
+
+.shop-by-collections-phool {
+	width: 100%;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.shop-by-collections-phool .image img {
+	width: 100%;
+}
+
+.shop-by-collections-phool .details {
+	position: absolute;
+	top:31.5%;
+	width: 100%;
+	text-align: center;
+	color: var(--hookish-green);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.shop-by-collections-phool .details p:nth-child(2) {
+	font-size: 2rem;
+	line-height: 1px;
+}
+
+.shop-by-collections-silk-sarees {
+	width: 100%;
+	position: relative;
+}
+
+.shop-by-collections-silk-sarees .video video {
+	width: 100%;
+	/* height: 100%; */
+}
+
+.shop-by-collections-silk-sarees .details {
+	position:absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: var(--hookish-green);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.shop-by-collections-silk-sarees .details p:nth-child(2) {
+	font-size: 2rem;
+	line-height: 1px;
+}
+
