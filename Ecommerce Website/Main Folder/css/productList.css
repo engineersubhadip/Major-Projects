@@ -16,6 +16,9 @@
 }
 
 .product-list-sidebar{
+	align-self:flex-start;
+	position:sticky;
+	top:100px;
 	/* border: 2px solid black; */
 	margin-right: 100px;
 	flex-basis: 25%;

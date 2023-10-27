@@ -23,6 +23,8 @@ body {
 }
 
 #header {
+	position:sticky;
+	top:0px;
 	background-color: var(--pale-yellow);
 	padding: 1.35rem;
 }

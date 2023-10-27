@@ -56,12 +56,16 @@
 }
 
 .price-details {
+	align-self:flex-start;
+	position: sticky;
+	top:100px;
 	flex-basis: 30%;
 	margin-left:2rem;
 	gap:2rem;
 }
 
 .price-details-box {
+
 	box-shadow: 0px 1px 5px var(--mid-gray);
 	padding:20px;
 	border-radius: 10px;

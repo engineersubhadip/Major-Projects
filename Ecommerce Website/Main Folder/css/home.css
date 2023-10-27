@@ -37,3 +37,13 @@
 	margin-top: 3rem;
 	font-size: 1.5rem;
 }
+
+.festive-edit-header {
+	margin-top:3rem;
+	flex:100%;
+	/* width:30% */
+}
+
+.festive-edit-header img {
+	width:100%;
+}
