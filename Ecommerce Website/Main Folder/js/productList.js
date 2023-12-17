@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(e){
-      
+
       async function fetchProducts(){
             let response = await fetch("https://fakestoreapi.com/products");
             let data = await response.json();
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",function(e){
                   let productName = document.createElement("div");
                   productName.classList.add("product-name","text-center");
       
-                  productName.textContent = productsList[i].title; // Populating the Title of the Product.
+                  productName.textContent = productsList[i].title.substring(0,12)+"..."; // Populating the Title of the Product.
       
                   productLink.appendChild(productName);
       
