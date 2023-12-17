@@ -1,0 +1,1 @@
+console.log("You are inside the Products Page");
