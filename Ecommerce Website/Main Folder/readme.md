@@ -16,3 +16,9 @@
 
 7. Now we will repair the styling to the Products Page. As of now, the product image cards looks uneven. We will have to fix that.
 
+8. We will call the async function `populateProducts` to populate our DOM. We have implemented this because whenever the user will land in the Product Details Page. We will be seeing all the products.
+
+8A. Also I have implemented a function `populateDOM` which will take an array as an argument. What this function will do is, the code inside this function was being used everywhere. So in order to avoid redundancy, I have made this as a function. The function will populate the DOM based on the Products we feed as an input.
+
+9. Now we have implemented the Filter functionality. We have added an Event Listener on the `Search Filter` button. Whenever the user is setting a Min Price and Max Price and clicking on Search Filter. We are firstly capturing the value of the Min and Max Price. Once, we have that we are calling the function `fetchProducts`. Since this function returns us a promise based Object but we have to access the value, so we use a async function as a callback inside the event Event Listener applied on the Search Button. Once we have all the records we have implemented a `filter` HOF to filter out the results based on the Min and Max Price. Also since we are supposed to clear out all the default display products and replace them with the updated ones, I have `productListBox.innerHTML = ""`. By doing so all the default displayed products clear out. Now we call `populateDOM` and pass the filtered array as an input to display the filtered data.
+
