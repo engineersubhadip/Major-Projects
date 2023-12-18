@@ -81,5 +81,18 @@ document.addEventListener("DOMContentLoaded",function(e){
             populateDOM(filteredProducts);
       });
 
+      let clearFilterBtn = document.querySelector("#clear");
+
+      clearFilterBtn.addEventListener("click",function(e){
+
+            minPrice.value = 0;
+            maxPrice.value = 0;
+
+            let productListBox = document.querySelector("#product-list");
+            productListBox.innerHTML = ""; // We are clearing out the current List 
+
+            populateProducts(); // This will populate the DOM with all the products.
+      })
+
 });
 
