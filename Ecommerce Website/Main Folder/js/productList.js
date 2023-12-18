@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(e){
                   let productPrice = document.createElement("div");
                   productPrice.classList.add("product-price","text-center");
       
-                  productPrice.textContent = `&#8377; ${productsList[i].price}`; // Populating the Price of the Product
+                  productPrice.textContent = `&#8377;${productsList[i].price}`; // Populating the Price of the Product
       
                   productLink.appendChild(productPrice);
       
