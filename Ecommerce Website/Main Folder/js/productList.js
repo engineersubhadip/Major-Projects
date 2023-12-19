@@ -1,7 +1,16 @@
 document.addEventListener("DOMContentLoaded",function(e){
 
       async function fetchProducts(){
-            let response = await fetch("https://fakestoreapi.com/products");
+            let url = undefined;
+            let queryParams = window.location.search.split("?")[1].split("=")[1];
+
+            if (queryParams == "all"){
+                  url = "https://fakestoreapi.com/products";
+            }else{
+                  url = `https://fakestoreapi.com/products/category/${queryParams}`
+            }
+
+            let response = await fetch(url);
             let data = await response.json();
             return data;
       }
