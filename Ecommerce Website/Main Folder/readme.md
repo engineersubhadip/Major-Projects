@@ -28,3 +28,6 @@ After that we have cleared the DOM. Then we called the function `populateProduct
 11. In the `index.js` file , whatever categories we have created for all the categories whenever we will now click on them we will be redirected to the `product list`. Also, if we click on any of the category we will now able to see `query params ` for that category. For every category we have created in JS, for each of them in the anchor section we have updated the `query params`.
 
 The reason why we did this is that, now that we have `query params` for each category we click. We can use that query Params to filter out the data we need in the Product List Page.
+
+12. Now that we have implemented query params on the home page.
+In the `productList.js` file we are first catching the URL of the product list page using `window.location.search`. Then using `split` we are able to get the category user clicked in the first place from the Home Page. Once we have that, using the fakestore API to get list of all the products in a particular category `https://fakestoreapi.com/products/category/jewelery` we have changed the last category name and used that as an input to for `fetch`.
