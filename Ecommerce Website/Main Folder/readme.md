@@ -24,3 +24,5 @@
 
 10. We have implemented the Clear Filter Functionality. We have added Event Listener on the `Clear Filter` Button. Whenever the user is clicking on this button whatever was the filtered results displayed, that gets cleared and the default view gets applied. After we have clicked on the Clear Filter then, inside the event listener we have first re-setted the max and min value to 0.
 After that we have cleared the DOM. Then we called the function `populateProducts`. This function will render the DOM with all the products.
+
+11. In the `index.js` file , whatever categories we have created for all the categories whenever we will now click on them we will be redirected to the `product list`. Also, if we click on any of the category we will now able to see `query params ` for that category. For every category we have created in JS, for each of them in the anchor section we have updated the `query params`.
