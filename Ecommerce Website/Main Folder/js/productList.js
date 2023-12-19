@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(e){
                   let productPrice = document.createElement("div");
                   productPrice.classList.add("product-price","text-center");
       
-                  productPrice.textContent = `\u20B9 ${array[i].price}`; // Populating the Price of the Product
+                  productPrice.textContent = `$${array[i].price}`; // Populating the Price of the Product
       
                   productLink.appendChild(productPrice);
       
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded",function(e){
             productListBox.innerHTML = ""; // We are clearing out the current List 
 
             populateProducts(); // This will populate the DOM with all the products.
-      })
+      });
 
 });
 

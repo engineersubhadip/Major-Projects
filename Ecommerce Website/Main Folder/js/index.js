@@ -20,7 +20,8 @@ async function populateCategories(){
 
             currentCategoryLink.textContent = categories[i]; // Here we are setting the incoming category Name inside the Anchor Tag
 
-            currentCategoryLink.href = "#";
+            currentCategoryLink.href = `productList.html?category=${categories[i]}`;
+
 
             currentCategoryHolder.appendChild(currentCategoryLink);
 
