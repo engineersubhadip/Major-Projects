@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded",function(e){
 
       async function fetchProducts(){
+            let parentURL = window.location.search;
             let url = undefined;
-            let queryParams = window.location.search.split("?")[1].split("=")[1];
 
-            if (queryParams == "all"){
-                  url = "https://fakestoreapi.com/products";
-            }else{
+            if (parentURL.includes("?")){
+                  let queryParams = parentURL.split("?")[1].split("=")[1];
                   url = `https://fakestoreapi.com/products/category/${queryParams}`
+            }else{
+                  url = "https://fakestoreapi.com/products"
             }
 
             let response = await fetch(url);
@@ -102,6 +103,8 @@ document.addEventListener("DOMContentLoaded",function(e){
 
             populateProducts(); // This will populate the DOM with all the products.
       });
+
+      // We are now going to dynamically populate the 
 
 });
 
