@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(e){
       let currentLandingURL = window.location.href;
-      console.log(currentLandingURL);
+      
 
       async function fetchProductDetails(){
             let url = undefined;
@@ -20,46 +20,25 @@ document.addEventListener("DOMContentLoaded",function(e){
 
             // We will first Update the Image:-
             let productImage = document.querySelector(".product-img");
-            productImage.innerHTML = "";
 
-            let image = document.createElement("img");
+            let image = document.querySelector("img");
             image.alt = "";
             image.src = data.image;
-            productImage.appendChild(image);
 
-            // We will now update the Right Side;
+            // We will now update the Right side of the Content
 
-            let productDetails = document.querySelector("#productDetails");
-            productDetails.innerHTML = "";
-
-            let productName = document.createElement("div");
-            productName.classList.add("product-name");
+            let productName = document.querySelector(".product-name");
             productName.textContent = data.title;
 
-            let productPrice = document.createElement("div");
-            productPrice.classList.add("product-price","fw-bold");
+            let productPrice = document.querySelector(".product-price");
             productPrice.textContent = `$${data.price}`;
 
-            let productDescription = document.createElement("div");
-            productDescription.classList.add("product-description");
 
-            let productDescriptionTitle = document.createElement("div");
-            productDescriptionTitle.classList.add("product-description-title", "fw-bold");
+            let productDescriptionTitle = document.querySelector(".product-description-title");
             productDescriptionTitle.textContent = "Description";
 
-            productDescription.appendChild(productDescriptionTitle);
-
-            let productDescriptionData = document.createElement("div");
-            productDescriptionData.classList.add("product-description-data");
+            let productDescriptionData = document.querySelector(".product-description-data");
             productDescriptionData.textContent = data.description;
-
-            productDescription.appendChild(productDescriptionData);
-
-            productDetails.appendChild(productName);
-
-            productDetails.appendChild(productPrice);
-
-            productDetails.appendChild(productDescription);
 
       }
 
