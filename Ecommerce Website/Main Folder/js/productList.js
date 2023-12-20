@@ -23,13 +23,11 @@ document.addEventListener("DOMContentLoaded",function(e){
       };
 
       function populateDOM(array){ // This function is used to populate the DOM
-      
             let productListBox = document.querySelector("#product-list");
       
             for (let i=0; i<array.length; i++){
-      
                   let productLink = document.createElement("a");
-                  productLink.href = "productDetails.html"; // As of now we will be able to redirect the same product detail.
+                  productLink.href = `productDetails.html?category=${array[i].id}`; //Whenever we will click on this page we will be redirected to product details page and using the query params we are giving. In the target page of productDetails we shall be utilizing this query params to fetch the records of the specific product.
                   productLink.target="_blank";
                   productLink.classList.add("product-item", "d-inline-block", "text-decoration-none");
             
