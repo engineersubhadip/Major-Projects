@@ -10,7 +10,7 @@ body {
             
 }
 .product-details-wrapper .product-img {
-      flex-basis: 30%;
+      flex-basis: 25%;
 }
 
 .product-img img {
@@ -53,6 +53,6 @@ body {
 }
 
 .product-details-action {
-	margin-top: 1rem;
-	width:350px;
+	margin-top: 1.5rem;
+	width:250px;
 }
