@@ -16,6 +16,12 @@ document.addEventListener("DOMContentLoaded",function(e){
             return data;
       }
 
+      async function fetchCategories(){ // We will be using this function to dynamically populate the Categories in the Left Panel of the Product List Page.
+            let response = await fetch("https://fakestoreapi.com/products/categories");
+            let data = await response.json();
+            return data;
+      };
+
       function populateDOM(array){ // This function is used to populate the DOM
       
             let productListBox = document.querySelector("#product-list");
@@ -104,7 +110,26 @@ document.addEventListener("DOMContentLoaded",function(e){
             populateProducts(); // This will populate the DOM with all the products.
       });
 
-      // We are now going to dynamically populate the 
+      // We are now going to dynamically populate the Category Listings in the Left Side Panel:-
+      function populateCategoryDOM(categoryArray){
+            let categoryList = document.querySelector("#categoryList");
+            for (let i=0; i<categoryArray.length; i++){
+                  let categoryLink = document.createElement("a");
+                  categoryLink.classList.add("d-flex", "text-decoration-none");
+                  categoryLink.textContent = categoryArray[i];
+                  categoryLink.href = `productList.html?category=${categoryArray[i]}`;
+
+                  categoryList.appendChild(categoryLink);
+            };
+      };
+
+      async function populateCategories(){
+            let categoryArray = await fetchCategories();
+            console.log(categoryArray);
+            populateCategoryDOM(categoryArray);
+      };
+
+      populateCategories();
 
 });
 
