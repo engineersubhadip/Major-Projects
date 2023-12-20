@@ -125,7 +125,6 @@ document.addEventListener("DOMContentLoaded",function(e){
 
       async function populateCategories(){
             let categoryArray = await fetchCategories();
-            console.log(categoryArray);
             populateCategoryDOM(categoryArray);
       };
 
