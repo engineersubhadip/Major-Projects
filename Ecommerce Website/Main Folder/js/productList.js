@@ -61,11 +61,10 @@ document.addEventListener("DOMContentLoaded",function(e){
       
       async function populateProducts(){
             let productsList = await fetchProducts();
-            populateDOM(productsList)
+            return productsList;
       
       };
       
-      populateProducts();
 
       let minPrice = document.querySelector("#minPrice");
 
@@ -123,10 +122,13 @@ document.addEventListener("DOMContentLoaded",function(e){
 
       async function populateCategories(){
             let categoryArray = await fetchCategories();
-            populateCategoryDOM(categoryArray);
+            return categoryArray;
       };
 
-      populateCategories();
+      Promise.all([populateProducts(),populateCategories()]).then((response)=>{
+            populateDOM(response[0]);
+            populateCategoryDOM(response[1]);
+      });
 
 });
 
